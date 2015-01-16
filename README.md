@@ -6,6 +6,8 @@ playbook to provision and boot a single
 (see <a href="http://www.openstack.org/">OpenStack</a>) instance
 using the Rackspace cloud. 
 
+You must have ansible and pyrax installed and configured to use this playbook.
+
 Currently, this repo contains two 
 <a href="https://wiki.openstack.org/wiki/Ironic">Ironic</a>-specific devstack
 configurations taken from the Ironic 
@@ -18,4 +20,4 @@ the ${repository_root}/roles/devstack/files/ directory.
 Also, there's a task file in ${repo_root}/roles/devstack/tasks/customization_tasks.yml
 where you can specify custom tasks you want to execute before ./stack.sh is run.
 
-Needs work to make it more flexible and useful! Feel free to contribue!
+Needs work to make it more flexible and useful! Feel free to contribute!
