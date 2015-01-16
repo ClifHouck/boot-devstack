@@ -18,7 +18,7 @@ your needs.
 * <b>server_name</b>: What to name the new devstack server.
 * <b>flavor</b>: The type of machine to spool for the devstack server.
 * <b>image</b>: The OS image to use on the devstack server.
-* <b>environment</b>: The supernova environment to use when requesting a new server.
+* <b>environment</b>: The pyrax environment to use when requesting a new server.
 * <b>devstack_config_filename</b>: The file to use as devstack's local.conf. 
 Available configurations are located in the devstack 
 <a href="https://github.com/ClifHouck/boot-devstack/tree/master/roles/devstack/files">files</a>
