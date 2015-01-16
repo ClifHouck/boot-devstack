@@ -1,0 +1,5 @@
+---
+# User-specific configuration.
+
+# The ssh key-pair to use to access the booted instance.
+key_name: ClifHouck

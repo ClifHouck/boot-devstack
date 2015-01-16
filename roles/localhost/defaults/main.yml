@@ -1,0 +1,13 @@
+---
+# Defaults for ironic devstack deployment
+
+# Credentials for talking to the rackspace cloud should
+# live in your local ~/.pyrax.cfg file.
+credentials: ~/.pyrax.cfg
+environment: teethtestenv1
+
+# Server configuration
+server_name: devstack-ansible
+flavor: performance1-8
+# This is para-virtualized Ubuntu 14.04, which is explicitly supported by devstack.
+image: 598a4282-f14b-4e50-af4c-b3e52749d9f9 

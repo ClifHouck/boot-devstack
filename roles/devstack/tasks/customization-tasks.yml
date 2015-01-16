@@ -1,0 +1,8 @@
+---
+# Customize this file to run tasks just before the devstack instance is
+# 'stacked' with stack.sh
+- name: Install packages I want
+  apt: name={{ item }} state=present
+  with_items:
+    - vim
+    - tmux

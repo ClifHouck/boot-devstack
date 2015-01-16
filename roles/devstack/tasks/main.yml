@@ -1,0 +1,7 @@
+---
+- include: devstack-setup-tasks.yml
+- include: customization-tasks.yml      
+- name: Run devstack.sh
+  shell: ~/devstack/stack.sh 
+  sudo: yes
+  sudo_user: stack

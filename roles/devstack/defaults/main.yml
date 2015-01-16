@@ -1,0 +1,3 @@
+---
+# Defaults for devstack setup and configuration.
+devstack_config_filename: ironic-agent-driver-local.conf

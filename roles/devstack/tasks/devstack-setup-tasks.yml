@@ -1,0 +1,23 @@
+- name: Update apt 
+  apt: update_cache=yes
+
+- name: Install necessary packages for devstack & ironic
+  apt: name={{ item }} state=present
+  with_items:
+      - git
+      
+- name: Clone devstack
+  git: repo='https://github.com/openstack-dev/devstack.git' dest=~/devstack
+
+- name: Create stack user
+  command: ~/devstack/tools/create-stack-user.sh
+
+- name: Clone devstack
+  git: repo='https://github.com/openstack-dev/devstack.git' dest=~/devstack
+  sudo: yes
+  sudo_user: stack
+
+- name: Copy local devstack config to devstack instance
+  copy: src={{ devstack_config_filename }} dest=/opt/stack/devstack/local.conf owner=stack group=stack 
+
+# TODO: Generate a local 'default' key-pair and add it to nova.

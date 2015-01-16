@@ -1,0 +1,15 @@
+---
+- name: Boot a devstack machine.
+  gather_facts: False
+  hosts: localhost
+  vars:
+      server_name: clif-devstack
+  roles:
+      - localhost
+
+- name: Setup devstack on a booted machine.
+  hosts: devstack-test
+  vars:
+      devstack_config_filename: ironic-pxe-driver-local.conf
+  roles: 
+      - devstack
