@@ -1,4 +1,4 @@
-# boot-devstack #
+# boot-devstack
 A simple 
 <a href="https://en.wikipedia.org/wiki/Ansible_(software)">ansible</a> 
 playbook to provision and boot a single
@@ -6,10 +6,10 @@ playbook to provision and boot a single
 (see <a href="http://www.openstack.org/">OpenStack</a>) instance
 using the Rackspace cloud. 
 
-## Requirements #
+## Requirements
 You must have ansible and pyrax installed and configured to use this playbook.
 
-## Important Playbook Variables #
+## Important Playbook Variables
 
 You probably want to change one or more of these playbook variables to suit
 your needs.
@@ -24,7 +24,7 @@ Available configurations are located in the devstack
 <a href="https://github.com/ClifHouck/boot-devstack/tree/master/roles/devstack/files">files</a>
 folder
 
-## Examples #
+## Examples
 All examples assume execution from the repository root.
 
     $ ansible-playbook boot-devstack.yml
@@ -36,8 +36,7 @@ to boot a machine using the default options.
 boots a devstack instance using a version of local.conf which uses enables the 
 PXE driver for use under Ironic.
 
-## Devstack Configuration # 
-
+## Devstack Configuration
 Currently, this repo contains two 
 <a href="https://wiki.openstack.org/wiki/Ironic">Ironic</a>-specific devstack
 configurations taken from the Ironic 
@@ -50,7 +49,7 @@ the ${repository_root}/roles/devstack/files/ directory.
 Also, there's a task file in ${repo_root}/roles/devstack/tasks/customization_tasks.yml
 where you can specify custom tasks you want to execute before ./stack.sh is run.
 
-## Notes #
+## Notes
 
 You will likely want to change the name of the key-pair you use in
 ${repo_root}/roles/localhost/vars/main.yml, since I hope you're not using mine!
