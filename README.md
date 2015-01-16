@@ -20,4 +20,7 @@ the ${repository_root}/roles/devstack/files/ directory.
 Also, there's a task file in ${repo_root}/roles/devstack/tasks/customization_tasks.yml
 where you can specify custom tasks you want to execute before ./stack.sh is run.
 
+You will likely want to change the name of the key-pair you use in
+${repo_root}/roles/localhost/vars/main.yml, since I hope you're not using mine!
+
 Needs work to make it more flexible and useful! Feel free to contribute!
