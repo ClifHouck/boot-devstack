@@ -9,6 +9,11 @@ using the Rackspace cloud.
 ## Requirements
 You must have ansible and pyrax installed and configured to use this playbook.
 
+You will likely want an entry for localhost in your /etc/ansible/hosts file. Like so:
+
+    [localhost]
+    localhost ansible_connection=local
+
 ## Important Playbook Variables
 
 You probably want to change one or more of these playbook variables to suit
