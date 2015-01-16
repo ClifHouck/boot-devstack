@@ -8,9 +8,13 @@ using the Rackspace cloud.
 
 ## Examples #
 All examples assume execution from the repository root.
+
     $ ansible-playbook boot-devstack.yml
+
 to boot a machine using the default options. 
+
     $ ansible-playbook boot-devstack.yml -e "devstack_config_filename=ironic-pxe-driver-local.conf"
+
 boots a devstack instance using a version of local.conf which uses enables the 
 PXE driver for use under Ironic.
 
