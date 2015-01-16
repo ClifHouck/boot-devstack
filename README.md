@@ -14,13 +14,13 @@ You must have ansible and pyrax installed and configured to use this playbook.
 You probably want to change one or more of these playbook variables to suit
 your needs.
 
-    * <b>key_name</b>: The ssh key-pair name to inject to the devstack host.
-    * <b>server_name</b>: What to name the new devstack server.
-    * <b>flavor</b>: The type of machine to spool for the devstack server.
-    * <b>image</b>: The OS image to use on the devstack server.
-    * <b>environment</b>: The supernova environment to use when requesting a new server.
-    * <b>devstack_config_filename</b>: The file to use as devstack's local.conf. 
-    Available configurations are located in the devstack 
+* <b>key_name</b>: The ssh key-pair name to inject to the devstack host.
+* <b>server_name</b>: What to name the new devstack server.
+* <b>flavor</b>: The type of machine to spool for the devstack server.
+* <b>image</b>: The OS image to use on the devstack server.
+* <b>environment</b>: The supernova environment to use when requesting a new server.
+* <b>devstack_config_filename</b>: The file to use as devstack's local.conf. 
+Available configurations are located in the devstack 
 <a href="https://github.com/ClifHouck/boot-devstack/tree/master/roles/devstack/files">files</a>
 folder
 
