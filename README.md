@@ -36,7 +36,7 @@ to boot a machine using the default options.
 boots a devstack instance using a version of local.conf which uses enables the 
 PXE driver for use under Ironic.
 
-## Devstack configuration # 
+## Devstack Configuration # 
 
 Currently, this repo contains two 
 <a href="https://wiki.openstack.org/wiki/Ironic">Ironic</a>-specific devstack
