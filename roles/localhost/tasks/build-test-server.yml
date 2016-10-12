@@ -7,7 +7,7 @@
     image: "{{ image }}" 
     key_name: "{{ key_name }}" 
     credentials: "{{ credentials }}"
-    env: teethtestenv1
+    env: "{{ nova_environment }}"
     wait: yes
   register: rax
 

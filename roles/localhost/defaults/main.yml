@@ -4,7 +4,7 @@
 # Credentials for talking to the rackspace cloud should
 # live in your local ~/.pyrax.cfg file.
 credentials: ~/.pyrax.cfg
-environment: iad
+nova_environment: iad
 
 # Server configuration
 server_name: devstack-ansible

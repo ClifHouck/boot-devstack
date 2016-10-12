@@ -1,10 +1,7 @@
-- name: Update apt 
-  apt: update_cache=yes
-
 - name: Install necessary packages for devstack & ironic
-  apt: name={{ item }} state=present
+  dnf: name={{ item }} state=present
   with_items:
-      - git
+    - git
       
 - name: Clone devstack
   git: repo='https://github.com/openstack-dev/devstack.git' dest=~/devstack

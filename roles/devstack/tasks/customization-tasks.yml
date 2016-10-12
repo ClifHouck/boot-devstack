@@ -2,7 +2,13 @@
 # Customize this file to run tasks just before the devstack instance is
 # 'stacked' with stack.sh
 - name: Install packages I want
-  apt: name={{ item }} state=present
+  dnf: name={{ item }} state=present
   with_items:
     - vim
     - tmux
+
+- name: Install my vimconfig
+  git: repo='https://github.com/ClifHouck/VimConfig' dest=~/VimConfig
+
+- name: Run setup for VimConfig
+  command: . ~/VimConfig/setup.sh
